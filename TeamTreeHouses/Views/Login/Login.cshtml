@@ -1,0 +1,12 @@
+﻿@model TeamTreeHouses.Models.User
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>@ViewBag.Title</h2>
+<form action="TryLogin" method="post">
+    <div>نام کاربری: @Html.TextBox("UserName")</div>
+    <div>رمز عبور: @Html.TextBox("Password")</div>
+    <div><input type="submit" value="تلاش برای ورود" /></div>
+</form>

@@ -1,0 +1,16 @@
+﻿@model TeamTreeHouses.Models.ComicBook
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = Model.DisplayText;
+}
+
+@*<h1>@ViewBag.SeriesTitle</h1>
+    <h2>Issue #@ViewBag.IssueNumber</h2>
+    <h5>Description:</h5>
+    <h2>@Html.Raw(ViewBag.Description)</h2>*@
+
+<h1>@Model.SeriesTitle</h1>
+<h2>Issue #@Model.IssueNumber</h2>
+<h5>Description:</h5>
+<h2>@Html.Raw(Model.DescriptionHtml)</h2>
+<h2>Favorite: @(Model.Favorite ? "Yes" : "No")</h2>

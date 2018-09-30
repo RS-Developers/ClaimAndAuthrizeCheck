@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "AddPermission";
+}
+
+<h2>@ViewBag.Title</h2>
+<form action="TryAddPermission" method="post">
+    <div>کد کاربر: @Html.TextBox("userId")</div>
+    <div>کد دسترسی: @Html.TextBox("permissionId")</div>
+    <div><input type="submit" value="تلاش برای ثبت" /></div>
+</form>
+

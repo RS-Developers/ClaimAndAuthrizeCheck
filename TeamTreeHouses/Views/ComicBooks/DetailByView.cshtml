@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+
+    var lSeriesTitle = "The Amazing Spider-Man";
+    var lIssueNumber = 700;
+    var lDescription = "<p>The Amazing Spider-Man Description<p>";
+    var lArtists = new string[]{
+      "Script: Dan Slott",
+      "Pencils: Humberto Ramos"
+    };
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1>@lSeriesTitle</h1>
+        <h2>Issue #@lIssueNumber</h2>
+        <h5>Description:</h5>
+        <div>@Html.Raw(lDescription)</div>
+        <h5>Artists:</h5>
+        @*<div>@lArtists</div>*@
+        @foreach (var lArtist in lArtists)
+        {
+            @*<text>* @lArtist</text>*@
+            <li>@lArtist</li>
+        }
+        <h1>@ViewBag.DetailOnController</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Detail By View";
+}
+
+<h1>@ViewBag.SeriesTitle</h1>
+<h2>Issue #@ViewBag.IssueNumber</h2>
+<h5>Description:</h5>
+<h2>@Html.Raw(ViewBag.Description)</h2>
