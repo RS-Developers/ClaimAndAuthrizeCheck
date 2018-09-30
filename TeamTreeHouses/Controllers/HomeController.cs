@@ -15,8 +15,9 @@ namespace TeamTreeHouses.Controllers
         [AllowAnonymous]
         public ActionResult Index()
         {
-            using (var lContext = new Models.TreeHouses())
-                return View(lContext.ComicBooks.ToList());
+            //using (var lContext = new Models.TreeHouses())
+            //    return View(lContext.ComicBooks.ToList());
+            return View();
         }
     }
 }

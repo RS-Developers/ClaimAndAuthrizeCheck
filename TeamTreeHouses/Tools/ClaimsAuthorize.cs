@@ -13,32 +13,32 @@ namespace TeamTreeHouses.Tools
     //: AuthorizeAttribute
     {
         /*** Private Part ***/
-        private static void AllowRequest(ActionExecutingContext authContext)
-        {
-            authContext.Result = null;
-            if (!authContext.RequestContext.HttpContext.Request.ServerVariables[@"SERVER_SOFTWARE"].Contains(@"Microsoft-IIS/7."))
-                authContext.HttpContext.Response.AddHeader(@"Tenforce-RAuth", @"OK");
-            else
-                authContext.HttpContext.Response.Headers.Add(@"Tenforce-RAuth", @"OK");
-        }
+        //private static void AllowRequest(ActionExecutingContext authContext)
+        //{
+        //    authContext.Result = null;
+        //    if (!authContext.RequestContext.HttpContext.Request.ServerVariables[@"SERVER_SOFTWARE"].Contains(@"Microsoft-IIS/7."))
+        //        authContext.HttpContext.Response.AddHeader(@"Tenforce-RAuth", @"OK");
+        //    else
+        //        authContext.HttpContext.Response.Headers.Add(@"Tenforce-RAuth", @"OK");
+        //}
 
-        private static void CancelRequest(ActionExecutingContext authContext)
-        {
-            authContext.Result = new HttpUnauthorizedResult();
-            if (!authContext.RequestContext.HttpContext.Request.ServerVariables[@"SERVER_SOFTWARE"].Contains(@"Microsoft-IIS/7."))
-                authContext.HttpContext.Response.AddHeader(@"Tenforce-RAuth", @"DENIED");
-            else
-                authContext.HttpContext.Response.Headers.Add(@"Tenforce-RAuth", @"DENIED");
-        }
+        //private static void CancelRequest(ActionExecutingContext authContext)
+        //{
+        //    authContext.Result = new HttpUnauthorizedResult();
+        //    if (!authContext.RequestContext.HttpContext.Request.ServerVariables[@"SERVER_SOFTWARE"].Contains(@"Microsoft-IIS/7."))
+        //        authContext.HttpContext.Response.AddHeader(@"Tenforce-RAuth", @"DENIED");
+        //    else
+        //        authContext.HttpContext.Response.Headers.Add(@"Tenforce-RAuth", @"DENIED");
+        //}
 
         /*** Public Part ***/
         public string Permission { get; set; }
         public static IPermissionManager PermissionManager { get; set; }
 
-        public void OnAuthorization(AuthorizationContext filterContext)
-        {
+        //public void OnAuthorization(AuthorizationContext filterContext)
+        //{
 
-        }
+        //}
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
