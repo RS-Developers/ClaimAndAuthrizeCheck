@@ -206,6 +206,8 @@
     <Content Include="Documents\Authorization.pdf" />
     <Content Include="Documents\Jwt_Athentication.pdf" />
     <Content Include="Documents\redis.pdf" />
+    <Content Include="Documents\ClaimsAuthorizeAttribute.docx" />
+    <Content Include="Documents\IPermissionManager.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamTreeHouses", "TeamTreeHouses\TeamTreeHouses.csproj", "{6F15963E-EAC5-496C-AF2E-6A6AB0FE35B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamTreeHouses-API", "TeamTreeHouses-API\TeamTreeHouses-API.csproj", "{E158B21F-DD6D-4643-B006-9BDC9FA08EF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{6F15963E-EAC5-496C-AF2E-6A6AB0FE35B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F15963E-EAC5-496C-AF2E-6A6AB0FE35B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F15963E-EAC5-496C-AF2E-6A6AB0FE35B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E158B21F-DD6D-4643-B006-9BDC9FA08EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E158B21F-DD6D-4643-B006-9BDC9FA08EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E158B21F-DD6D-4643-B006-9BDC9FA08EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E158B21F-DD6D-4643-B006-9BDC9FA08EF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FFC95A8-D599-4836-9E0A-673C7B48223D}
 	EndGlobalSection
 EndGlobal

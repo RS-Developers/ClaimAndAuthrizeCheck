@@ -76,7 +76,7 @@ namespace TeamTreeHouses.Tools
             }//end if
             #endregion
             var lUserId = Convert.ToInt32(lId.Value);
-            if (!PermissionManager.HaveAccessToPermission(lUserId, Permission))
+            if (!PermissionManager.HaveAccessToPermission(lUserId, this.Permission))
             #region
             {
                 //filterContext.RequestContext.HttpContext.AddError(new InvalidOperationException("User Not Have Permission"));
