@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http.Formatting;
 using System.Web.Http;
 
 namespace TeamTreeHouses_API
@@ -31,7 +33,13 @@ namespace TeamTreeHouses_API
             }//end foreach
 #endif
             // Json Formatter
-
+            var lJsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().FirstOrDefault();
+            if (lJsonFormatter != null)
+            {
+                //lJsonFormatter.SerializerSettings.DateFormatHandling = DateFormatHandling.MicrosoftDateFormat; // return date like: Date=/Date(1538553687358+0330)/
+                //lJsonFormatter.SerializerSettings.DateFormatHandling = DateFormatHandling.IsoDateFormat; // return date like: Date=2018-10-03T11:30:56.8580569+03:30
+                // Default: Date=2018-10-03T11:30:29.6790092+03:30
+            }//end if
         }
     }
 }
