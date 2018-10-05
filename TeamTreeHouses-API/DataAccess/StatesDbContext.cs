@@ -15,7 +15,7 @@ namespace TeamTreeHouses_API.DataAccess
         public DbSet<GameEvent> GameEvents { get; set; }
 
         public StatesDbContext() 
-            : base()
+            : base("DefaultConnection")
         {
             //Database.SetInitializer(new MigrateDatabaseToLatestVersion<StatesDbContext, Migrations.Configuration>());
         }

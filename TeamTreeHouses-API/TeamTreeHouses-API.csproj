@@ -190,12 +190,16 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PlayerController.cs" />
+    <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DataAccess\Entities\EntityBase.cs" />
     <Compile Include="DataAccess\Entities\Game.cs" />
     <Compile Include="DataAccess\Entities\GameEvent.cs" />
     <Compile Include="DataAccess\Entities\Player.cs" />
+    <Compile Include="Filters\ModelValidatorAttribute.cs" />
+    <Compile Include="Models\ModelBase.cs" />
+    <Compile Include="Models\PlayerModel.cs" />
     <Compile Include="DataAccess\Entities\ReportingBase.cs" />
     <Compile Include="DataAccess\Entities\Team.cs" />
     <Compile Include="DataAccess\IStateService.cs" />
@@ -211,6 +215,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\IModelFactory.cs" />
+    <Compile Include="Models\ModelFactory.cs" />
+    <Compile Include="Models\TeamModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -269,7 +276,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
